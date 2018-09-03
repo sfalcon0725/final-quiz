@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: url(https://css-tricks.com/wp-content/csstricks-uploads/transpBlack75.png) fixed, url(https://www.secretentourage.com/wp-content/uploads/2011/01/10/1-tgc/garagepics-13.jpg) fixed;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  height: 620px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Graduate', cursive;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 35px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+
+.start h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.start h2 {
+  padding-top: 80px;
+  font-size: 35px;
+  font-style: oblique;
+  color: yellow;
+}
+
+.start button {
+  background-color: lime;
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.status {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  color: darkorange;
+  font-size: 25px;
+}
+
+.feedbackPage h2 {
+  font-size: 100px;
+  padding-top: 125px;
+}
+
+.feedbackPage h3 {
+  color: lime;
+  font-size: 25px;
+}
+
+.resultsWrapper h1 {
+  font-size: 100px;
+}
+
+.resultsWrapper h2 {
+  font-size: 50px;
+  padding-top: 50px;
+  color: lime;
+}
+
+.questionText {
+  font-size: 35px;
+  color: dodgerblue;
+}
+
+.answers label {
+  display: inline;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.answers input {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+.answers {
+  padding: 60px;
+}
+
+.testStatus {
+  padding: 20px;
+}
+
+#correct {
+  color: lime;
+}
+
+#incorrect {
+  color: red;
+}
+
+input[type="radio"]:checked+label {
+  color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .start button {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+  button {
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+    font-size: 4vw;
+    font-weight: bold;
+    bottom: 0px;
+  }
+  .start h1 {
+    font-size: 8vw;
+  }
+  .start h2 {
+    font-size: 6vw;
+  }
+  .questionText {
+    font-size: 6vw;
+  }
+  .status {
+    font-size: 4vw;
+  }
+  .answers label {
+    font-size: 5vw;
+  }
+  .feedbackPage h2 {
+    font-size: 15vw;
+  }
+  .feedbackPage h3 {
+    font-size: 4vw;
+  }
+  .feedbackPage button {
+    margin-top: 15vw;
+  }
+  .resultsWrapper h1 {
+    font-size: 15vw;
+  }
+  .resultsWrapper h2 {
+    font-size: 8vw;
+  }
+}
